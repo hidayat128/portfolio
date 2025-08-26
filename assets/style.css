@@ -1,0 +1,242 @@
+.center{
+text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+.inline_modified,
+.modified td:first-child a:before{
+    color: #e91e63;
+    background: #e91e63;	
+}
+.inline_genuine,
+.genuine td:first-child a:before{
+    color: #bef47e;
+    background: #bef47e;
+}
+.inline_forced,
+.forced td:first-child a:before{
+    color: #2196f3;
+    background: #2196f3;
+}
+.inline_dot{
+    display: inline-block !important;
+    float: none !important;
+}
+.inline_dot,
+.genuine td:first-child a:before,
+.modified td:first-child a:before,
+.forced td:first-child a:before{
+    content: 'o';
+    float: left;
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 0px !important;
+	margin-right:5px;
+}
+.update_time{
+margin-top: -8px;
+margin-bottom: 30px;
+text-align: center;
+font-size: 12px;
+}
+.update_time time{
+font-weight: bold;
+font-style: italic;
+}
+#clear{
+    border: 0px;
+    cursor: pointer;
+    padding: 0;
+    margin: 0;
+    color: #fc514f;	
+}
+#close{
+float: right;
+color: red;
+font-family: arial;
+margin-top: -20px;
+font-size: 12px;
+cursor: pointer;
+}
+table tbody {
+  display: block;
+  max-height: 450px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+table thead, table tbody tr {
+  display: table;
+  width: 100%;
+  table-layout: fixed;
+}
+body{
+    margin: 0;
+    padding: 0;
+    background: url(bg.jpg);
+    Color: #555555;
+    font-family: sans-serif;
+    background-size: cover;
+    background-attachment: fixed;
+}
+.body_cover{
+    background: #ffffffe0;
+    position: relative;
+    padding: 20px;
+}
+
+
+.profile-img{
+border-radius: 50%;
+margin: auto;
+display: block;
+width: 100px;
+height: 100px;
+border: 3px solid #fbf1f0fc;
+}
+
+hr{
+    border-color:#fff;
+	opacity:0.5;
+}	
+
+.cover h2 a{
+    text-align: center;
+    display: block;
+    text-decoration: none;
+	font-size: 20px;
+}
+a{
+color:#787777;
+}
+.cover{
+    margin: 5% auto;
+    max-width: 840px;
+    padding: 30px;
+    background: #f4f4f4e3;
+    border-radius: 10px;
+    box-shadow: 0px 0px 7px #a19e9e;
+    border: 4px solid #eeeded;}
+
+
+.mini_table td:first-child{
+	width:16px;
+}
+input[name=site_status]{
+visibility:hidden;
+position:absolute;
+}
+.mini_table label:not(.radio_label){
+opacity:0.7;
+cursor:pointer;
+}
+
+.mini_table tr{
+   border-bottom: 1px solid #e2e1e1;
+   padding: 8px 0px;	
+}
+.mini_table tr:last-child{
+border-bottom:0 !important;	
+}
+.mini_table{
+    max-width: 510px;
+    margin: 35px auto 0px auto !important;
+    background: #fafafa;
+    padding: 0.5em;
+}
+#table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  margin-top:30px;
+  background: #fff;
+}
+
+#table td {
+	overflow: hidden;
+    border: 1px solid #e2e1e1;
+    padding: 8px;
+    border-bottom: none;
+}
+#table tr td:nth-child(2),
+#table tr td:nth-child(3)
+{ 
+filter: opacity(0.7);
+}
+
+#table tfoot td {
+    text-align: center;
+    background: #e2e1e1;
+    border: none;
+}
+#table th {
+  padding:8px;
+  text-align: left;
+  background-color: #e2e1e1;
+}
+#table tr td a{
+	text-decoration: none;
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+	 text-transform: lowercase;
+}
+
+
+#search::placeholder{
+color:#808080;
+}
+#search{
+	margin: auto;
+    display: block;
+    margin-top: 10px;
+    border: 0;
+    background: transparent;
+    border-bottom: 1px solid #cacaca;
+    outline: none;
+    padding: 10px;
+}
+
+/*Desktop CSS*/
+@media only screen and (min-width:767px){
+
+#search{
+min-width:350px;	
+}
+#close{
+	margin-right:236px !important;
+}
+
+}	
+/*Mobile CSS*/
+@media only screen and (max-width:767px){
+#search{
+min-width:90%;	
+}	
+#close{
+	margin-right:0 !important;
+}
+
+#table tbody{
+min-width:700px;
+}
+
+.table_cover{
+    max-width:100%;
+    overflow: auto;
+    margin: auto;
+    padding: 0;
+}
+
+}
+::-webkit-scrollbar {
+    width: 5px;
+}
+::-webkit-scrollbar-thumb {
+    background: gray;
+}
+::-webkit-scrollbar-track {
+    background: #ffffff;
+}
